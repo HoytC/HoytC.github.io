@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    background-image: url("Backgrounds/FalconBackgroundTrue.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    
+    
+
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        margin: 0;
+        background-image: url("Backgrounds/FalconBackgroundTrue.png");
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+
+
+
+
+
+
+.header {
+    background-image:  url("Icons/Logo2Small1.png"), url("Backgrounds/MiniBK3.png");
+    background-position: center left, center right;
+    background-color: #282828;
+    background-repeat: no-repeat, no-repeat;
+    text-align: center;
+    font-size: 18px;
+    padding: 27px;
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+* {
+    box-sizing: border-box;
+}
+.topnav {
+    overflow: hidden;
+    /*background-color: #333;    Original color - slightly off from Header and Background */
+    background-color: #373737;
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    display: flex;
+    justify-content: center;
+    font-family: "Helvetica";
+}
+
+.topnav a:hover {
+    transition: .8s;
+    opacity: 0.5;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #373737;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 50px;
+    text-decoration: none;
+}
+
+
+.column {
+    float: left;
+    padding: 40px;
+    /* 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    
+    Viewport issues. Try adding height 100% to all parent elements then add grow here? I dunno...
+    */
+}
+  
+
+.column.side {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 150px;
+}
+
+.column.side p {
+    display: flex;
+    justify-content: center;
+}
+
+.column.side h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+  
+ 
+.column.middle {
+    width: 50%;
+    justify-content: center;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 158px;
+}
+
+.column.middle p {
+    display: flex;
+    justify-content: center;
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.column.middle h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 38px;
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.column.middle2 {
+    width: 50%;
+    justify-content: center;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding-bottom: 120px;
+}
+
+.column.middle2 h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 38px;
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+ 
+@media screen and (max-width: 600px) {
+.column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+#heads{
+    display:flex;
+    flex-flow: column;
+    height: 650px;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+#mario {
+    display:block;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    background: url(Characters/MarioHead.png) no-repeat bottom;
+    width: 56px;
+    height: 56px;    
+}
+
+#luigi {
+    display:block;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    background: url(Characters/LuigiHead.png) no-repeat bottom;
+    width: 51px;
+    height: 56px;    
+}   
+
+#fox {
+    display:block;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    background: url(Characters/FoxHead.png) no-repeat bottom;
+    width: 51px;
+    height: 56px;
+}
+
+#gan{
+    display:block;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    background: url(Characters/GanonHead.png) no-repeat bottom;
+    width: 59px;
+    height: 59px;
+}
+
+#cfh{
+    display:block;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    background: url(Characters/CFHead.png) no-repeat bottom;
+    width: 59px;
+    height: 59px;
+}
+
+.box.box1{
+    font-size: 25px;
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.box.box2{
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.box.box3{
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.box.box4{
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.box.box5{
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.box.box6{
+    font-family: "Helvetica";
+    color: #FDC609;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+/* Trying to align image with center of middle column... may have to create empty boxes above and below and justify space between? That or
+   You'd have to redo the whole column layout in favor of multiple flex boxes. Oof?
+
+ .box.box0{
+    display: flex;
+    justify-content: space-evenly;
+}
+*/
+
+#cf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+
+#ganon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 180px;
+}
+
+#together{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 180px;
+}
+
+#pix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-top: 180px;
+}
+
+#lui{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 180px;
+}
+
+#ness{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 180px;
+}
+
+
+#kirby{
+    display:block;
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    background: url(Characters/KirbyHead.png) no-repeat bottom;
+    width: 51px;
+    height: 56px;    
+}
+
+#foot{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.bot.box2{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-left: 1px solid; 
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.bot.box3{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-left: 5px;
+    border-color: black;
+    border-left: 1px solid;
+    
+}
+.footer {
+    background-color: #FDC609;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 11px;
+    font-family: "Helvetica";
+    color: black;
+}
